@@ -1,0 +1,646 @@
+<!doctype html>
+<html lang="id">
+ <head><script>window["__codeletBootstrap__"]=JSON.parse('{"A":"A","B":"20261015-04-7abc9b0","C":{"Abril Fatface":"YACgEZbkUVE,0","Albert Sans":"YAHO2HRfeh4,0","Alfa Slab One":"YACgEYS9sJU,0","Anton":"YACgEcYqQ-A,0","Archivo Black":"YACgEZulLoA,0","Archivo":"YAHO2-t-jNE,0","Arial":"YAGyDvJ_4Ts,0","Baloo 2":"YAHO2IcQUcM,0","Barlow Condensed":"YAFdJljEuFc,0","Barlow":"YAFdJsyuOPM,1","Bebas Neue":"YACgESME5ew,0","Bricolage Grotesque":"YAFyMcdwzpc,0","Cairo":"YAFdtXpDzlQ,0","Canva Sans":"YAFdJjTk5UU,1","Caveat":"YALBs2ploWQ,0","Cinzel":"YACgEeV8bIQ,0","Cormorant Garamond":"YAFdJhX-538,0","Courier New":"YAGzXiGs0_8,0","Courier Prime":"YAD1aFjegN8,0","DM Sans":"YAD1aU3sLnI,0","DM Serif Display":"YAD1aYG82rc,0","Figtree":"YAHO2b-mV7A,0","Forum":"YACgEcnnqB4,0","Fraunces":"YAFdJpU7Kkk,0","Fredoka":"YACgEZml080,0","Georgia":"YAGzXkO0pEM,0","Hanken Grotesk":"YAHO2VB9G0I,0","Helvetica":"YAFcf7zkXN0,0","IBM Plex Mono":"YAFdJkmvhGI,0","IBM Plex Sans":"YAFdJgT0SHI,0","Impact":"YAFcfnjI7Vk,0","Instrument Sans":"YAHO2bKyaSQ,0","Instrument Serif":"YAHFeOnZNEk,0","Inter":"YAFdJvSyp_k,3","Italiana":"YAHO2Toik_w,0","Jacques Francois":"YAHO2a5g66Q,0","JetBrains Mono":"YAFdJksXcAk,0","Josefin Sans":"YAFdJjvw9Ps,0","Karla":"YAHO2V2NSXM,0","Lato":"YAFdJuFCnaw,0","Libre Baskerville":"YACgEUFdPdA,0","Libre Caslon Display":"YAHO2XhLmt0,0","Lobster":"YAD8SnSjSFI,0","Lora":"YACgEXvxf8Q,0","Manrope":"YAHO2b2feC4,0","Merriweather":"YACgEXvHxxs,0","Montserrat":"YAFdtQi73Xs,0","Noto Sans JP":"YAFdJiHXlcI,0","Noto Sans KR":"YAGsojZj-RQ,0","Nunito Sans":"YAFdtQJYB9w,1","Nunito":"YAFdJoNRMmU,1","Oleo Script":"YACgEQQ14jI,0","Open Sans":"YAFdJt8dAY0,1","Oswald":"YACgEQY10lw,0","Outfit":"YAHO2nVlg14,0","Pacifico":"YADLjORQ1u4,0","Playfair Display":"YAFdJhem5V8,1","Plus Jakarta Sans":"YAHO2gdhi18,0","Poppins":"YAFdJjbTu24,1","Press Start 2P":"YAFyGr-8pmQ,0","Public Sans":"YAFdJj8NdaU,1","Quicksand":"YAFdJpYtCxE,1","Raleway":"YAFdJhmxbVQ,1","Roboto Slab":"YAFdJswIKAg,0","Rockwell":"YAFcfyVZnN0,0","Rye":"YACgEdQP21k,0","STIX Two Text":"YAHO2joycuk,0","Sarabun":"YAFdJssSnME,0","Schibsted Grotesk":"YAHO2sWydRk,0","Segoe UI":"YAHNdRD1Klw,0","Source Sans 3":"YAG4lO1Mj10,0","Space Grotesk":"YAHO2sjPCSM,0","Space Mono":"YADW1-vpsoc,0","Spectral":"YAHO2rVUHIM,0","Times New Roman":"YAGzXW3gftg,0","Trebuchet MS":"YAFcfrglpVA,0","Ubuntu":"YACgERDU--Q,0","Verdana":"YAGzXTctYtQ,0","Work Sans":"YAGXhLOKv44,0","Yellowtail":"YACgEYG4kG4,0"}}');</script><script src="/_sdk/05db820ba1544614.telemetry_sdk.js" integrity="sha512-a7JzkQDDcioSXpM61nxTfeRW7PcxWQy5+BrhyeTFmQFsXJ+Gncm0y50u7fTA7qOPegFnRgqCfa0mGUOK1yjDWQ=="></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Petualangan Pecahan</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&amp;family=Fraunces:wght@700;800&amp;display=swap" rel="stylesheet">
+  <style>
+    :root{--blue:#16478a;--deep:#123467;--yellow:#ffcc47;--green:#20875b;--paper:#f6fbff}
+    *{box-sizing:border-box}
+    body{font-family:"DM Sans",sans-serif;color:var(--deep);margin:0}
+    .app-shell{width:100%;min-height:100%;background:radial-gradient(circle at 8% 12%,#d6f1ff 0,transparent 30%),radial-gradient(circle at 90% 82%,#fff2be 0,transparent 32%),#f6fbff}
+    h1,h2,h3{font-family:"Fraunces",serif}
+    .screen[hidden], [hidden]{display:none!important}
+    .panel{background:#fff;border:2px solid #d8eafa;border-radius:28px;box-shadow:0 14px 38px #16478a10}
+    .action{border:0;border-radius:16px;padding:.85rem 1.3rem;font-weight:800;cursor:pointer;transition:transform .15s,filter .15s}
+    .action:hover:not(:disabled){transform:translateY(-2px);filter:brightness(1.06)}
+    .action:disabled{opacity:.48;cursor:not-allowed}
+    .primary{background:#16478a;color:white}.sun{background:#ffcc47;color:#123467}.mint{background:#20875b;color:white}
+    .outline{background:white;color:#16478a;border:2px solid #16478a}
+    :focus-visible{outline:3px solid #f3a510!important;outline-offset:3px}
+    .pizza{width:132px;aspect-ratio:1;border-radius:50%;border:9px solid #e9a953;background:conic-gradient(#f6bb4e 0 75%,#fff5d5 75% 100%);box-shadow:0 10px 0 #cf823e;position:relative}
+    .pizza.two{background:conic-gradient(#f6bb4e 0 25%,#fff5d5 25% 100%)}
+    .pizza:after{content:"";position:absolute;inset:0;border-radius:50%;background:linear-gradient(90deg,transparent 49%,#d78f43 49% 51%,transparent 51%),linear-gradient(0deg,transparent 49%,#d78f43 49% 51%,transparent 51%);pointer-events:none}
+    .pizza.small{width:90px;border-width:6px;box-shadow:0 6px 0 #cf823e}
+    .fraction-bar{display:flex;width:100%;max-width:370px;height:34px;gap:3px}
+    .fraction-bar span{flex:1;background:#e6eff6;border-radius:5px}
+    .fraction-bar span.filled{background:#49b985}
+    .choice{width:100%;text-align:left;background:white;border:2px solid #cde2f2;border-radius:16px;padding:14px 18px;font-weight:700;transition:.15s}
+    .choice:hover:not(:disabled){border-color:#16478a;background:#edf7ff}
+    .choice:disabled{cursor:default}.choice.correct{background:#dbf8e8;border-color:#20875b}.choice.wrong{background:#ffe6e0;border-color:#cf5441}
+    .creator{color:#375a78;font-size:.88rem;font-weight:700}
+    .step-list{list-style:decimal;padding-left:1.35rem;display:grid;gap:.4rem}
+    .pill{display:inline-block;border-radius:999px;padding:.35rem .8rem;background:#e5f5eb;color:#176344;font-weight:800}
+    .table-wrap{overflow-x:auto}.table-wrap table{width:100%;border-collapse:collapse;min-width:690px}
+    th,td{padding:12px;text-align:left;border-bottom:1px solid #dceaf5;vertical-align:top}
+    th{background:#e9f5fd}
+    .entry{border:1px solid #dceaf5;border-radius:15px;padding:12px;background:#fff}
+    .screen{animation:arrive .3s ease both}@keyframes arrive{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+    @media(max-width:640px){.pizza{width:92px;border-width:6px}.pizza.small{width:70px}.action{width:100%}}
+  </style>
+  <script src="https://cdn.tailwindcss.com/3.4.17" type="text/javascript"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.577.0/dist/umd/lucide.min.js" type="text/javascript"></script>
+  <script src="/_sdk/570d53629f0b998d.data_sdk.js" type="text/javascript" integrity="sha512-JEN39+V+Nvv9ZZOVS8vNk1iA9ErZJHTdgOw9KzPuMiK7m0I+KPEr/wmTnCFIQVsDjCZgJWfGnFi1IQh2Io2qyA=="></script>
+  <script src="/_sdk/0d3107a88dd31248.editing_sdk.js" type="text/javascript" integrity="sha512-YxJYPIC1TZ/l8asjpXojbfYA1LiLTr3Fh6BPE6fDLKLWTkDIhVGqsl6xMTuKf5GPOv3sZeQW9jrwgZcsiAARIQ=="></script>
+  <script src="/_sdk/f195026a424c1f85.resizing_sdk.js" type="text/javascript" integrity="sha512-8On4Z+AXh1abEzZJ9Dbn9wOvFg+k1LsAaAzKGQ7LlfgXajZ9xEmZaZ1QVzv0AWhCZtCsEpWSOG9DgLri06TS7A=="></script>
+ </head>
+ <body data-template-id="__page-root">
+  <div class="app-shell w-full">
+   <div class="mx-auto w-full max-w-5xl px-4 py-7 sm:px-8 sm:py-10">
+    <header class="flex flex-wrap items-center justify-between gap-3 mb-7">
+     <div class="flex items-center gap-3">
+      <span aria-hidden="true" class="text-3xl">🍕</span><span data-template-id="brand" class="canva-text font-extrabold tracking-tight">PETUALANGAN PECAHAN</span>
+     </div><span data-template-id="subject-label" class="canva-tag pill">MATEMATIKA · KELAS VI SD</span>
+    </header>
+    <main>
+     <section id="home" class="screen panel overflow-hidden" aria-labelledby="home-title">
+      <div class="grid md:grid-cols-2 gap-8 items-center p-7 sm:p-12">
+       <div><span data-template-id="home-eyebrow" class="canva-tag pill mb-5">MISI BELAJAR SERU</span>
+        <h1 id="home-title" data-template-id="home-title" class="canva-text leading-tight mb-4">PETUALANGAN PECAHAN</h1>
+        <p data-template-id="home-subtitle" class="canva-text mb-7 text-lg">Ayo Belajar Membandingkan Pecahan dengan Seru!</p>
+        <div class="flex flex-wrap gap-3"><button id="home-start" data-template-id="home-start-label" class="canva-button action primary" type="button">MULAI BERMAIN</button> <button id="home-learn" data-template-id="home-learn-label" class="canva-button action sun" type="button">PELAJARI MATERI</button> <button id="home-help" data-template-id="home-help-label" class="canva-button action outline" type="button">PETUNJUK PERMAINAN</button>
+        </div>
+        <p data-template-id="creator-home" class="canva-text creator mt-8">Dibuat oleh: Nur Liani Saputri, S.Pd.</p>
+       </div>
+       <div class="rounded-[30px] bg-[#e5f5ff] p-6 sm:p-9 text-center">
+        <div class="flex justify-center items-center gap-4 sm:gap-7">
+         <div>
+          <div class="pizza" role="img" aria-label="Pizza dengan tiga dari empat bagian berwarna"></div><b>3/4</b>
+         </div><span class="text-5xl font-black text-[#20875b]" aria-label="lebih besar dari">&gt;</span>
+         <div>
+          <div class="pizza two" role="img" aria-label="Pizza dengan satu dari empat bagian berwarna"></div><b>1/4</b>
+         </div>
+        </div>
+        <div class="mt-7 text-3xl font-black tracking-[.3em] text-[#16478a]" aria-label="Simbol lebih besar, lebih kecil, dan sama dengan">
+         &gt; &lt; =
+        </div>
+       </div>
+      </div>
+     </section>
+     <section id="help" class="screen panel p-7 sm:p-10" hidden aria-labelledby="help-title">
+      <h2 id="help-title" data-template-id="help-title" class="canva-text mb-5">Petunjuk Permainan</h2>
+      <ol class="step-list mb-7 leading-relaxed">
+       <li data-template-id="help-one" class="canva-text">Isi nama lengkapmu terlebih dahulu.</li>
+       <li data-template-id="help-two" class="canva-text">Buka seluruh 10 bagian materi sebelum memulai kuis.</li>
+       <li data-template-id="help-three" class="canva-text">Jawab 10 soal acak. Setiap soal bernilai 10 poin dan jawaban tidak dapat diubah.</li>
+       <li data-template-id="help-four" class="canva-text">Baca pembahasan setiap soal, lalu lihat hasilmu di akhir.</li>
+      </ol><button data-template-id="help-back" class="canva-button action primary" type="button" data-go="home">KEMBALI</button>
+     </section>
+     <section id="identity" class="screen panel p-7 sm:p-11 max-w-2xl mx-auto" hidden aria-labelledby="identity-title">
+      <h2 id="identity-title" data-template-id="identity-title" class="canva-text mb-3">IDENTITAS PESERTA DIDIK</h2>
+      <p data-template-id="identity-intro" class="canva-text mb-7">Tuliskan nama lengkapmu sebelum memulai petualangan Matematika!</p>
+      <form id="name-form" novalidate><label for="student-name" data-template-id="name-label" class="canva-text block font-bold mb-2">Nama Lengkap</label> <input id="student-name" data-template-id="name-placeholder" class="canva-input w-full rounded-xl border-2 border-[#bad5ec] px-4 py-3 mb-2" type="text" autocomplete="name" maxlength="90" placeholder="Tulis nama lengkapmu">
+       <p id="name-error" class="text-[#ad342a] font-bold mb-4" role="alert" hidden>Silakan isi nama lengkapmu terlebih dahulu!</p><button data-template-id="identity-submit" class="canva-button action primary mt-3" type="submit">MULAI BELAJAR</button>
+      </form>
+     </section>
+     <section id="material" class="screen" hidden aria-labelledby="material-heading">
+      <div class="flex flex-wrap justify-between items-center gap-3 mb-4">
+       <div>
+        <p data-template-id="material-kicker" class="canva-text font-extrabold text-[#20875b]">BUKU PETUALANGAN</p>
+        <h2 id="material-heading" data-template-id="material-heading-label" class="canva-text">Materi Perbandingan Pecahan</h2>
+       </div><span id="material-progress" class="pill" aria-live="polite"></span>
+      </div>
+      <div class="panel p-6 sm:p-10 min-h-[390px]">
+       <article class="lesson" data-lesson="0">
+        <h3 data-template-id="lesson-1-title" class="canva-text mb-4">01 / Apa Itu Pecahan?</h3>
+        <p data-template-id="lesson-1-a" class="canva-text mb-3">Pecahan menyatakan bagian dari satu keseluruhan. Bentuknya a/b: a adalah pembilang (bagian yang diperhatikan), b adalah penyebut (jumlah seluruh bagian sama besar). Penyebut tidak boleh nol.</p>
+        <p data-template-id="lesson-1-b" class="canva-text mb-4">Contoh: 3/4 berarti 3 dari 4 bagian sama besar. Bayangkan pizza yang dipotong menjadi 4 bagian, lalu 3 bagiannya diwarnai.</p>
+        <div class="pizza small mx-auto" role="img" aria-label="Lingkaran dibagi menjadi empat bagian sama besar, tiga bagian berwarna"></div>
+        <p data-template-id="lesson-1-c" class="canva-text mt-5 font-bold">Latihan singkat: Pada 5/8, angka 5 adalah pembilang dan angka 8 adalah penyebut.</p>
+       </article>
+       <article class="lesson" data-lesson="1" hidden>
+        <h3 data-template-id="lesson-2-title" class="canva-text mb-4">02 / Membandingkan Pecahan</h3>
+        <p data-template-id="lesson-2-a" class="canva-text mb-4">Membandingkan pecahan berarti menentukan mana yang nilainya lebih besar (&gt;), lebih kecil (&lt;), atau sama dengan (=). Bandingkan nilainya, bukan sekadar besarnya angka pembilang atau penyebut.</p>
+        <div class="grid sm:grid-cols-3 gap-3 font-bold">
+         <div class="pill">
+          3/4 &gt; 1/4
+         </div>
+         <div class="pill">
+          1/5 &lt; 4/5
+         </div>
+         <div class="pill">
+          2/6 = 1/3
+         </div>
+        </div>
+        <p data-template-id="lesson-2-b" class="canva-text mt-5">Latihan singkat: Apakah 1/4 lebih besar dari 3/4? Tidak, karena 1/4 &lt; 3/4.</p>
+       </article>
+       <article class="lesson" data-lesson="2" hidden>
+        <h3 data-template-id="lesson-3-title" class="canva-text mb-4">03 / Penyebut Sama</h3>
+        <p data-template-id="lesson-3-a" class="canva-text mb-4">Jika penyebut sama, bandingkan pembilangnya. Pembilang yang lebih besar menunjukkan bagian yang lebih banyak.</p>
+        <ol class="step-list mb-5">
+         <li>Bandingkan 3/8 dan 5/8. Penyebut keduanya 8.</li>
+         <li>Pembilangnya 3 dan 5; 3 lebih kecil dari 5.</li>
+         <li>Jadi, <strong>3/8 &lt; 5/8</strong>.</li>
+        </ol>
+        <div class="space-y-3">
+         <div>
+          <b>3/8</b>
+          <div class="fraction-bar">
+           <span class="filled"></span><span class="filled"></span><span class="filled"></span><span></span><span></span><span></span><span></span><span></span>
+          </div>
+         </div>
+         <div>
+          <b>5/8</b>
+          <div class="fraction-bar">
+           <span class="filled"></span><span class="filled"></span><span class="filled"></span><span class="filled"></span><span class="filled"></span><span></span><span></span><span></span>
+          </div>
+         </div>
+        </div>
+        <p data-template-id="lesson-3-b" class="canva-text mt-5">Coba cek: 2/7 &lt; 6/7, 5/9 &gt; 4/9, dan 3/10 = 3/10.</p>
+       </article>
+       <article class="lesson" data-lesson="3" hidden>
+        <h3 data-template-id="lesson-4-title" class="canva-text mb-4">04 / Pembilang Sama</h3>
+        <p data-template-id="lesson-4-a" class="canva-text mb-4">Jika pembilang sama dan positif, penyebut yang lebih kecil menghasilkan bagian yang lebih besar. Dua potong dari pizza yang dibagi 3 lebih besar daripada dua potong dari pizza sama besar yang dibagi 5.</p>
+        <ol class="step-list mb-5">
+         <li>Bandingkan 2/3 dan 2/5: pembilangnya sama, yaitu 2.</li>
+         <li>Bandingkan penyebutnya: 3 lebih kecil dari 5.</li>
+         <li>Jadi, <strong>2/3 &gt; 2/5</strong>.</li>
+        </ol>
+        <div class="flex items-center justify-center gap-5">
+         <span class="text-5xl" aria-hidden="true">🍕</span><b>2/3 &gt; 2/5</b><span class="text-5xl" aria-hidden="true">🍕</span>
+        </div>
+        <p data-template-id="lesson-4-b" class="canva-text mt-5">Contoh lain: 3/4 &gt; 3/8; 1/2 &gt; 1/6; 2/7 &lt; 2/5.</p>
+       </article>
+       <article class="lesson" data-lesson="4" hidden>
+        <h3 data-template-id="lesson-5-title" class="canva-text mb-4">05 / Penyebut Berbeda: Gunakan KPK</h3>
+        <p data-template-id="lesson-5-a" class="canva-text mb-4">Samakan penyebut dengan Kelipatan Persekutuan Terkecil (KPK), lalu bandingkan pembilangnya.</p>
+        <ol class="step-list mb-5">
+         <li>Bandingkan 2/3 dan 3/4. KPK dari 3 dan 4 adalah 12.</li>
+         <li>2/3 = (2 × 4)/(3 × 4) = 8/12.</li>
+         <li>3/4 = (3 × 3)/(4 × 3) = 9/12.</li>
+         <li>8 &lt; 9, sehingga <strong>2/3 &lt; 3/4</strong>.</li>
+        </ol>
+        <p data-template-id="lesson-5-b" class="canva-text">Contoh kedua: KPK dari 5 dan 3 adalah 15. Maka 3/5 = 9/15 dan 2/3 = 10/15. Karena 9 &lt; 10, 3/5 &lt; 2/3.</p>
+       </article>
+       <article class="lesson" data-lesson="5" hidden>
+        <h3 data-template-id="lesson-6-title" class="canva-text mb-4">06 / Cara Cepat: Perkalian Silang</h3>
+        <p data-template-id="lesson-6-a" class="canva-text mb-4">Untuk pecahan dengan penyebut positif, kalikan pembilang pertama dengan penyebut kedua, lalu pembilang kedua dengan penyebut pertama.</p>
+        <ol class="step-list">
+         <li>Bandingkan 2/5 dan 3/7.</li>
+         <li>Hitung silang: 2 × 7 = 14 dan 3 × 5 = 15.</li>
+         <li>Karena 14 &lt; 15, maka <strong>2/5 &lt; 3/7</strong>.</li>
+        </ol>
+        <p data-template-id="lesson-6-b" class="canva-text mt-5">Perhatikan: cara ini digunakan dengan penyebut positif. Latihan: 1/2 dan 2/3 → 1 × 3 = 3, 2 × 2 = 4; jadi 1/2 &lt; 2/3.</p>
+       </article>
+       <article class="lesson" data-lesson="6" hidden>
+        <h3 data-template-id="lesson-7-title" class="canva-text mb-4">07 / Pecahan Senilai</h3>
+        <p data-template-id="lesson-7-a" class="canva-text mb-4">Pecahan senilai memiliki bentuk berbeda tetapi nilai yang sama: <strong>1/2 = 2/4 = 3/6 = 4/8</strong>.</p>
+        <ol class="step-list">
+         <li>Mulai dari 2/3.</li>
+         <li>Kalikan pembilang dan penyebut dengan bilangan sama selain nol, misalnya 2.</li>
+         <li>(2 × 2)/(3 × 2) = 4/6. Jadi, <strong>2/3 = 4/6</strong>.</li>
+        </ol>
+        <p data-template-id="lesson-7-b" class="canva-text mt-5">Kita juga dapat membagi pembilang dan penyebut dengan bilangan yang sama. Pecahan senilai membantu saat menyamakan penyebut.</p>
+       </article>
+       <article class="lesson" data-lesson="7" hidden>
+        <h3 data-template-id="lesson-8-title" class="canva-text mb-4">08 / Mengurutkan Pecahan</h3>
+        <p data-template-id="lesson-8-a" class="canva-text mb-4">Untuk mengurutkan pecahan, samakan penyebutnya dan bandingkan nilainya.</p>
+        <ol class="step-list">
+         <li>Urutkan 1/2, 3/4, 1/4 dari terkecil.</li>
+         <li>Gunakan penyebut 4: 1/2 = 2/4.</li>
+         <li>Bandingkan 2/4, 3/4, dan 1/4.</li>
+         <li>Terkecil ke terbesar: <strong>1/4, 1/2, 3/4</strong>.</li>
+        </ol>
+        <p data-template-id="lesson-8-b" class="canva-text mt-5">Urutan sebaliknya, dari terbesar ke terkecil: 3/4, 1/2, 1/4.</p>
+       </article>
+       <article class="lesson" data-lesson="8" hidden>
+        <h3 data-template-id="lesson-9-title" class="canva-text mb-4">09 / Pecahan di Sekitar Kita</h3>
+        <div class="grid gap-4 sm:grid-cols-3">
+         <div class="rounded-2xl bg-[#fff3d4] p-4">
+          <div class="text-3xl" aria-hidden="true">
+           🍕
+          </div>
+          <p data-template-id="lesson-9-pizza" class="canva-text">Andi makan 3/8 pizza, Budi 5/8. Karena 3 &lt; 5 dengan penyebut sama, Budi makan lebih banyak.</p>
+         </div>
+         <div class="rounded-2xl bg-[#e5f5ff] p-4">
+          <div class="text-3xl" aria-hidden="true">
+           🥤
+          </div>
+          <p data-template-id="lesson-9-water" class="canva-text">Gelas pertama 1/2 liter, kedua 3/4 liter. Ubah 1/2 = 2/4. Gelas kedua berisi lebih banyak.</p>
+         </div>
+         <div class="rounded-2xl bg-[#e7f7ed] p-4">
+          <div class="text-3xl" aria-hidden="true">
+           📚 🍫 🍎 🍰
+          </div>
+          <p data-template-id="lesson-9-book" class="canva-text">Siti membaca 2/3 buku, Rina 3/5. Ubah ke 10/15 dan 9/15. Siti membaca lebih banyak. Cara yang sama berlaku untuk membandingkan bagian cokelat, buah, atau kue.</p>
+         </div>
+        </div>
+       </article>
+       <article class="lesson" data-lesson="9" hidden>
+        <h3 data-template-id="lesson-10-title" class="canva-text mb-4">10 / Rangkuman Petualangan</h3>
+        <ul class="list-disc pl-6 space-y-3">
+         <li>Jika penyebut sama, bandingkan pembilang.</li>
+         <li>Jika pembilang sama dan positif, penyebut lebih kecil berarti nilai lebih besar.</li>
+         <li>Jika penyebut berbeda, samakan penyebut atau gunakan perkalian silang.</li>
+         <li>Pecahan senilai memiliki nilai sama.</li>
+         <li>Gunakan simbol &gt;, &lt;, dan = sesuai nilai pecahan.</li>
+         <li>Untuk mengurutkan, bandingkan nilai semua pecahan dahulu.</li>
+        </ul>
+        <p data-template-id="lesson-10-prompt" class="canva-text mt-6 font-bold">Siap? Pastikan semua bagian telah kamu buka, lalu mulai kuis!</p>
+       </article>
+      </div>
+      <div class="flex flex-wrap justify-between gap-3 mt-5"><button id="lesson-prev" data-template-id="lesson-prev-label" class="canva-button action outline" type="button">SEBELUMNYA</button>
+       <div class="flex flex-wrap gap-3">
+        <button id="lesson-next" data-template-id="lesson-next-label" class="canva-button action sun" type="button">BERIKUTNYA</button><button id="start-quiz" data-template-id="start-quiz-label" class="canva-button action mint" type="button" disabled>MULAI KUIS</button>
+       </div>
+      </div>
+      <p id="lesson-lock" class="mt-3 text-sm font-bold text-[#8a6011]" aria-live="polite"></p>
+      <footer data-template-id="creator-material" class="canva-footer creator mt-7 text-center">
+       Dibuat oleh: Nur Liani Saputri, S.Pd.
+      </footer>
+     </section>
+     <section id="quiz" class="screen" hidden aria-labelledby="quiz-title">
+      <div class="flex flex-wrap justify-between gap-3 items-center mb-4">
+       <h2 id="quiz-title" data-template-id="quiz-heading" class="canva-text">Tantangan Pecahan</h2><span id="quiz-progress" class="pill" aria-live="polite"></span>
+      </div>
+      <div class="h-3 rounded-full bg-[#d9e9f4] mb-5 overflow-hidden">
+       <div id="quiz-progress-fill" class="h-full bg-[#20875b] transition-all" style="width:10%"></div>
+      </div>
+      <div class="panel p-6 sm:p-9">
+       <p id="question-text" class="text-xl sm:text-2xl font-extrabold mb-6"></p>
+       <div id="choices" class="grid sm:grid-cols-2 gap-3"></div>
+       <div id="feedback" class="mt-6 rounded-2xl p-5 bg-[#f0f8ff]" hidden aria-live="polite">
+        <p id="feedback-status" class="font-black text-xl mb-2"></p>
+        <p id="feedback-selected"></p>
+        <p id="feedback-answer"></p>
+        <p id="feedback-points" class="font-bold mt-1"></p>
+        <p id="feedback-explanation" class="mt-3 leading-relaxed whitespace-pre-line"></p><button id="next-question" data-template-id="next-question-label" class="canva-button action primary mt-5" type="button">SOAL BERIKUTNYA</button>
+       </div>
+      </div>
+      <footer data-template-id="creator-quiz" class="canva-footer creator mt-7 text-center">
+       Dibuat oleh: Nur Liani Saputri, S.Pd.
+      </footer>
+     </section>
+     <section id="result" class="screen panel p-7 sm:p-12 text-center" hidden aria-labelledby="result-title">
+      <div class="text-5xl mb-4" aria-hidden="true">
+       🏆
+      </div>
+      <h2 id="result-title" data-template-id="result-heading" class="canva-text mb-3">Petualangan Selesai!</h2>
+      <p id="result-name" class="text-lg font-bold"></p>
+      <p id="result-score" class="text-6xl font-black text-[#16478a] my-5"></p>
+      <p id="result-counts" class="font-bold"></p>
+      <p id="result-motivation" class="text-xl font-extrabold my-5 text-[#20875b]"></p>
+      <p id="save-state" class="text-sm mb-6" aria-live="polite"></p>
+      <div class="flex flex-wrap justify-center gap-3">
+       <button id="review-material" data-template-id="review-label" class="canva-button action sun" type="button">PELAJARI MATERI LAGI</button><button id="finish" data-template-id="finish-label" class="canva-button action primary" type="button">SELESAI</button>
+      </div>
+      <footer data-template-id="creator-result" class="canva-footer creator mt-8">
+       Dibuat oleh: Nur Liani Saputri, S.Pd.
+      </footer>
+     </section>
+     <section id="teacher-login" class="screen panel p-7 sm:p-10 max-w-xl mx-auto" hidden aria-labelledby="teacher-login-heading">
+      <h2 id="teacher-login-heading" data-template-id="teacher-login-title" class="canva-text mb-4">Akses Rekap Guru</h2>
+      <p data-template-id="pin-warning" class="canva-text mb-5 text-sm">PIN prototipe ini hanya menyembunyikan tampilan, bukan pengamanan data yang kuat. Jangan gunakan untuk rekap rahasia atau bagikan kepada siswa sebelum tersedia autentikasi dan pembatasan akses yang benar.</p>
+      <form id="pin-form">
+       <label for="teacher-pin" data-template-id="pin-label" class="canva-text block font-bold mb-2">PIN Guru</label><input id="teacher-pin" class="canva-input w-full rounded-xl border-2 border-[#bad5ec] p-3 mb-3" type="password" inputmode="numeric" autocomplete="off" required>
+       <p id="pin-error" class="text-[#ad342a] mb-3" role="alert" hidden>PIN tidak sesuai.</p><button data-template-id="pin-submit" class="canva-button action primary" type="submit">BUKA REKAP</button>
+      </form><button data-template-id="pin-back" class="canva-button action outline mt-4" type="button" data-go="home">KEMBALI</button>
+     </section>
+     <section id="teacher" class="screen" hidden aria-labelledby="teacher-title">
+      <div class="flex flex-wrap justify-between items-center gap-3 mb-4">
+       <h2 id="teacher-title" data-template-id="teacher-heading" class="canva-text">Rekap Khusus Guru</h2><button id="teacher-exit" data-template-id="teacher-exit-label" class="canva-button action outline" type="button">KELUAR REKAP</button>
+      </div>
+      <p data-template-id="teacher-warning" class="canva-text mb-5 text-sm rounded-xl bg-[#fff0d1] p-4">Perhatian: PIN dalam kode tidak mengamankan Canva Sheet. Konfigurasi prototipe ini memungkinkan aplikasi membaca rekap; gunakan hanya dalam lingkungan terkendali.</p>
+      <div id="data-status" class="mb-4 font-bold" role="status"></div><button id="retry-load" data-template-id="retry-label" class="canva-button action outline mb-4" type="button" hidden>COBA MUAT ULANG</button>
+      <div id="teacher-content" hidden>
+       <div id="stats" class="grid sm:grid-cols-3 gap-3 mb-5"></div>
+       <div class="panel p-5 mb-5">
+        <h3 data-template-id="question-stats-heading" class="canva-text mb-3">Statistik Per Soal</h3>
+        <div id="question-stats" class="grid gap-2"></div>
+       </div>
+       <div class="flex flex-wrap items-end gap-3 mb-4">
+        <div>
+         <label for="teacher-search" data-template-id="search-label" class="canva-text block font-bold mb-1">Cari nama siswa</label><input id="teacher-search" data-template-id="search-placeholder" class="canva-input border-2 rounded-xl p-2 w-full" type="search" placeholder="Ketik nama siswa">
+        </div>
+        <div>
+         <label for="teacher-sort" data-template-id="sort-label" class="canva-text block font-bold mb-1">Urutkan nilai</label><select id="teacher-sort" class="border-2 rounded-xl p-2"><option value="newest">Terbaru</option><option value="high">Tertinggi</option><option value="low">Terendah</option></select>
+        </div><button id="download-csv" data-template-id="download-label" class="canva-button action mint" type="button">UNDUH REKAP CSV</button> <button id="delete-all" data-template-id="delete-all-label" class="canva-button action outline" type="button">HAPUS DATA</button>
+       </div>
+       <div id="delete-confirm" class="panel p-4 mb-4" hidden>
+        <p data-template-id="delete-question" class="canva-text mb-3 font-bold">Hapus seluruh data hasil? Tindakan ini tidak dapat dibatalkan.</p>
+        <div class="flex flex-wrap gap-2">
+         <button id="confirm-delete" data-template-id="confirm-delete-label" class="canva-button action primary" type="button">YA, HAPUS SEMUA</button><button id="cancel-delete" data-template-id="cancel-delete-label" class="canva-button action outline" type="button">BATAL</button>
+        </div>
+       </div>
+       <div class="panel table-wrap">
+        <table>
+         <thead>
+          <tr>
+           <th>Nama siswa</th>
+           <th>Tanggal &amp; waktu</th>
+           <th>Nilai</th>
+           <th>Benar</th>
+           <th>Salah</th>
+           <th>Jawaban tiap soal</th>
+          </tr>
+         </thead>
+         <tbody id="teacher-rows"></tbody>
+        </table>
+       </div>
+      </div>
+     </section>
+    </main>
+    <footer class="mt-8 text-center">
+     <button id="teacher-entry" data-template-id="teacher-entry-label" class="canva-link text-sm underline text-[#486584] hover:text-[#16478a]" type="button">Akses guru</button>
+    </footer>
+   </div>
+  </div>
+  <script>
+(() => {
+  const $ = id => document.getElementById(id);
+  const screens = ['home','help','identity','material','quiz','result','teacher-login','teacher'];
+  const categories = {same:2,numerator:2,different:3,equivalent:1,order:1,story:1};
+  const letters = 'ABCD';
+  let studentName = '', lessonIndex = 0, visited = new Set(), questions = [], questionIndex = 0, responses = [], locked = false;
+  let backendRecords = [], dataReady = false, dataError = '', loadTimer, teacherUnlocked = false, dataInitPromise, dataReadyResolve;
+  const escapeHTML = value => String(value ?? '').replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
+  const shuffle = array => { const copy=[...array]; for(let i=copy.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[copy[i],copy[j]]=[copy[j],copy[i]]}return copy };
+  function show(id){
+    if(id==='material' && !studentName) id='identity';
+    if(id==='quiz' && (!studentName || visited.size<10)) id=studentName?'material':'identity';
+    if(id==='teacher' && !teacherUnlocked) id='teacher-login';
+    screens.forEach(name => $(name).hidden=name!==id);
+    $('teacher-entry').hidden=id!=='home';
+    if(id==='teacher') renderTeacher();
+  }
+  const formatFraction = f => f[0]+'/'+f[1];
+  const gcd=(a,b)=>b?gcd(b,a%b):a;
+  const lcm=(a,b)=>a*b/gcd(a,b);
+  function compare(a,b){return Math.sign(a[0]*b[1]-b[0]*a[1])}
+  const symbol = n => n>0?'>':n<0?'<':'=';
+  function makeQuestion(id,category,prompt,choices,correct,explanation){
+    return {id,category,prompt,choices,correct,explanation};
+  }
+  const bank=[];
+  // Each category contains at least six independently identified, checked questions.
+  [
+    [[3,8],[5,8]],[[6,7],[2,7]],[[4,9],[4,9]],[[2,11],[9,11]],[[7,10],[3,10]],[[5,12],[8,12]]
+  ].forEach(([a,b],i)=>{
+    const result=symbol(compare(a,b)), A=formatFraction(a),B=formatFraction(b);
+    bank.push(makeQuestion('S'+(i+1),'same',`Pilih tanda yang tepat: ${A} ... ${B}`,
+      [`${A} > ${B}`,`${A} < ${B}`,`${A} = ${B}`,'Tidak dapat dibandingkan'],
+      [`>`,`<`,`=`].indexOf(result),
+      `1. Penyebut keduanya sama, yaitu ${a[1]}.\n2. Bandingkan pembilang ${a[0]} dan ${b[0]}.\n3. ${A} ${result} ${B}.`));
+  });
+  [
+    [[2,3],[2,5]],[[2,7],[2,9]],[[3,8],[3,4]],[[1,6],[1,2]],[[4,5],[4,9]],[[3,10],[3,7]]
+  ].forEach(([a,b],i)=>{
+    const result=symbol(compare(a,b)),A=formatFraction(a),B=formatFraction(b);
+    bank.push(makeQuestion('P'+(i+1),'numerator',`Pilih tanda yang tepat: ${A} ... ${B}`,
+      [`${A} > ${B}`,`${A} < ${B}`,`${A} = ${B}`,'Tidak dapat dibandingkan'],
+      ['>','<','='].indexOf(result),
+      `1. Pembilang kedua pecahan sama dan positif, yaitu ${a[0]}.\n2. Bandingkan penyebut ${a[1]} dan ${b[1]}. Penyebut lebih kecil berarti tiap bagiannya lebih besar.\n3. ${A} ${result} ${B}.`));
+  });
+  [
+    [[2,3],[3,4]],[[3,5],[2,3]],[[2,5],[3,7]],[[5,6],[7,9]],[[3,8],[4,11]],[[4,7],[5,9]],[[5,8],[3,5]],[[7,12],[2,3]],[[3,4],[6,8]]
+  ].forEach(([a,b],i)=>{
+    const result=symbol(compare(a,b)),A=formatFraction(a),B=formatFraction(b), k=lcm(a[1],b[1]);
+    bank.push(makeQuestion('B'+(i+1),'different',`Bandingkan ${A} dan ${B}. Pilih pernyataan yang benar.`,
+      [`${A} > ${B}`,`${A} < ${B}`,`${A} = ${B}`,'Keduanya tidak dapat dibandingkan'],
+      ['>','<','='].indexOf(result),
+      `1. KPK dari ${a[1]} dan ${b[1]} adalah ${k}.\n2. ${A} = ${a[0]*k/a[1]}/${k} dan ${B} = ${b[0]*k/b[1]}/${k}.\n3. Bandingkan pembilangnya: ${a[0]*k/a[1]} ${result} ${b[0]*k/b[1]}. Jadi ${A} ${result} ${B}.`));
+  });
+  [
+    [[1,2],[2,4],[2,3],[3,5]],[[2,3],[4,6],[3,4],[4,5]],
+    [[3,4],[6,8],[2,3],[5,8]],[[2,5],[4,10],[3,5],[2,7]],
+    [[3,6],[1,2],[3,8],[2,3]],[[4,8],[2,4],[1,3],[3,4]]
+  ].forEach(([base,right,wrong1,wrong2],i)=>{
+    const options=[formatFraction(wrong1),formatFraction(right),formatFraction(wrong2),'1/1'];
+    bank.push(makeQuestion('E'+(i+1),'equivalent',`Pecahan manakah yang senilai dengan ${formatFraction(base)}?`,
+      options,1,`1. Pecahan senilai memiliki nilai sama.\n2. ${formatFraction(base)} = ${formatFraction(right)} karena pembilang dan penyebut dapat dikalikan atau dibagi dengan bilangan sama selain nol.\n3. Jadi jawabannya ${formatFraction(right)}.`));
+  });
+  [
+    [[1,4],[1,2],[3,4]],[[1,3],[1,2],[2,3]],[[1,5],[2,5],[4,5]],
+    [[1,6],[1,3],[2,3]],[[2,8],[1,2],[3,4]],[[2,5],[3,5],[4,5]]
+  ].forEach((values,i)=>{
+    const sorted=[...values].sort((a,b)=>compare(a,b)).map(formatFraction);
+    const correct=sorted.join(', ');
+    const distractors=[
+      [...sorted].reverse().join(', '),
+      [sorted[1],sorted[0],sorted[2]].join(', '),
+      [sorted[0],sorted[2],sorted[1]].join(', ')
+    ];
+    const denom=values.reduce((n,f)=>lcm(n,f[1]),1);
+    bank.push(makeQuestion('U'+(i+1),'order',`Urutkan ${values.map(formatFraction).join(', ')} dari terkecil ke terbesar.`,
+      [distractors[0],distractors[1],correct,distractors[2]],2,
+      `1. Samakan penyebut menjadi ${denom}.\n2. Nilainya: ${values.map(f=>`${formatFraction(f)} = ${f[0]*denom/f[1]}/${denom}`).join('; ')}.\n3. Dari terkecil ke terbesar: ${correct}.`));
+  });
+  [
+    ['pizza','Andi','Budi',[3,8],[5,8]],
+    ['air','Gelas pertama','Gelas kedua',[1,2],[3,4]],
+    ['buku','Siti','Rina',[2,3],[3,5]],
+    ['kue','Dina','Eka',[3,6],[2,3]],
+    ['cokelat','Rafa','Nina',[5,9],[4,9]],
+    ['buah','Lani','Tono',[2,5],[3,7]],
+    ['pizza','Mira','Rudi',[3,4],[6,8]],
+    ['air','Botol A','Botol B',[4,5],[3,5]],
+    ['kue','Tari','Bima',[2,3],[1,2]]
+  ].forEach(([item,first,second,a,b],i)=>{
+    const sign=compare(a,b),winner=sign>0?first:sign<0?second:'Sama banyak';
+    const k=lcm(a[1],b[1]);
+    bank.push(makeQuestion('C'+(i+1),'story',
+      `${first} memiliki ${formatFraction(a)} bagian ${item}; ${second} memiliki ${formatFraction(b)} bagian ${item}. Siapa yang memiliki bagian lebih banyak?`,
+      [first,second,'Sama banyak','Tidak dapat ditentukan'],sign>0?0:sign<0?1:2,
+      `1. Samakan penyebut ke ${k}: ${formatFraction(a)} = ${a[0]*k/a[1]}/${k} dan ${formatFraction(b)} = ${b[0]*k/b[1]}/${k}.\n2. Bandingkan: ${formatFraction(a)} ${symbol(sign)} ${formatFraction(b)}.\n3. Jawaban: ${winner}.`));
+  });
+  function updateMaterial(){
+    document.querySelectorAll('.lesson').forEach((node,i)=>node.hidden=i!==lessonIndex);
+    visited.add(lessonIndex);
+    $('material-progress').textContent=`BAGIAN ${lessonIndex+1} DARI 10`;
+    $('lesson-prev').disabled=lessonIndex===0;
+    $('lesson-next').disabled=lessonIndex===9;
+    $('start-quiz').disabled=visited.size!==10;
+    $('lesson-lock').textContent=visited.size===10?'Semua materi telah dibuka. Kamu siap memulai kuis!':`Buka seluruh materi untuk membuka kuis (${visited.size}/10 sudah dibuka).`;
+  }
+  function beginQuiz(){
+    questions=shuffle(Object.entries(categories).flatMap(([category,count])=>shuffle(bank.filter(q=>q.category===category)).slice(0,count)))
+      .map(q=>({...q,options:shuffle(q.choices.map((text,index)=>({text,originalIndex:index})))}));
+    responses=[];questionIndex=0;renderQuestion();show('quiz');
+  }
+  function renderQuestion(){
+    locked=false;const q=questions[questionIndex];
+    $('quiz-progress').textContent=`SOAL ${questionIndex+1} DARI 10`;
+    $('quiz-progress-fill').style.width=`${(questionIndex+1)*10}%`;
+    $('question-text').textContent=q.prompt;
+    $('feedback').hidden=true;
+    const box=$('choices');box.replaceChildren();
+    q.options.forEach((option,index)=>{
+      const button=document.createElement('button');
+      button.type='button';button.className='choice';button.textContent=`${letters[index]}. ${option.text}`;
+      button.addEventListener('click',()=>answer(index,button));box.appendChild(button);
+    });
+    $('next-question').textContent=questionIndex===9?'LIHAT HASIL':'SOAL BERIKUTNYA';
+  }
+  function answer(index,button){
+    if(locked)return;locked=true;
+    const q=questions[questionIndex],selected=q.options[index],correctIndex=q.options.findIndex(opt=>opt.originalIndex===q.correct);
+    const right=selected.originalIndex===q.correct,buttons=[...$('choices').children];
+    buttons.forEach((item,i)=>{item.disabled=true;if(i===correctIndex)item.classList.add('correct')});
+    if(!right)button.classList.add('wrong');
+    responses.push({id:q.id,number:questionIndex+1,prompt:q.prompt,selected:letters[index]+'. '+selected.text,
+      key:letters[correctIndex]+'. '+q.options[correctIndex].text,correct:right,points:right?10:0});
+    $('feedback-status').textContent=right?'BENAR! 🎉':'SALAH — ayo pahami langkahnya!';
+    $('feedback-selected').textContent='Jawabanmu: '+responses.at(-1).selected;
+    $('feedback-answer').textContent='Kunci jawaban: '+responses.at(-1).key;
+    $('feedback-points').textContent='Poin diperoleh: '+(right?10:0);
+    $('feedback-explanation').textContent=q.explanation;
+    $('feedback').hidden=false;
+  }
+  const dataHandler={onDataChanged(data){
+    clearTimeout(loadTimer);dataReady=true;dataError='';backendRecords=data;
+    if(dataReadyResolve){dataReadyResolve();dataReadyResolve=null}
+    if(!$('teacher').hidden)renderTeacher();
+  }};
+  async function initData(){
+    dataReady=false;dataError='';clearTimeout(loadTimer);
+    const readyPromise=new Promise(resolve=>{dataReadyResolve=resolve});
+    loadTimer=setTimeout(()=>{if(!dataReady){dataError='Rekap belum dapat dimuat. Coba lagi.';const resolve=dataReadyResolve;dataReadyResolve=null;resolve?.();renderTeacher()}},8000);
+    try{
+      const result=await window.dataSdk.init(dataHandler);
+      if(!result.isOk){clearTimeout(loadTimer);dataReadyResolve=null;dataError='Tidak dapat menghubungkan Canva Sheet. Coba lagi.';renderTeacher();return}
+      if(!dataReady) await readyPromise;
+    }catch(e){clearTimeout(loadTimer);dataReadyResolve=null;dataError='Tidak dapat menghubungkan Canva Sheet. Coba lagi.';renderTeacher()}
+  }
+  async function showResult(){
+    const correct=responses.filter(r=>r.correct).length,score=correct*10;
+    $('result-name').textContent=studentName;
+    $('result-score').textContent=score+' / 100';
+    $('result-counts').textContent=`${correct} jawaban benar · ${10-correct} jawaban salah`;
+    $('result-motivation').textContent=score>=90?'EXCELLENT! Kamu jago membandingkan pecahan!':score>=80?'VERY GOOD! Terus pertahankan prestasimu!':score>=70?'GOOD JOB! Ayo berlatih lagi!':'KEEP LEARNING! Jangan menyerah, pelajari materi lagi!';
+    $('save-state').textContent='Sedang menyimpan hasil ke Canva Sheet…';show('result');
+    if(dataInitPromise) await dataInitPromise;
+    if(!dataReady){$('save-state').textContent='Hasil belum tersimpan: koneksi Canva Sheet belum siap. Jangan tutup halaman jika ingin mencoba lagi.';return}
+    const record={student_name:studentName,score,correct_count:correct,wrong_count:10-correct,
+      answers_detail:JSON.stringify(responses),
+      questions_detail:JSON.stringify(questions.map(q=>({id:q.id,prompt:q.prompt,key:q.choices[q.correct],explanation:q.explanation}))),
+      completed_at:new Date().toISOString()};
+    if(backendRecords.length>=999){$('save-state').textContent='Hasil belum tersimpan: batas 999 rekap telah tercapai.';return}
+    try{
+      const result=await window.dataSdk.create(record);
+      $('save-state').textContent=result.isOk?'Hasil berhasil disimpan ke Canva Sheet.':'Penyimpanan tidak dapat dikonfirmasi. Periksa rekap sebelum mencoba lagi.';
+    }catch(e){$('save-state').textContent='Penyimpanan tidak dapat dikonfirmasi. Periksa rekap sebelum mencoba lagi.'}
+  }
+  const parseList=(value)=>{try{const v=JSON.parse(value||'[]');return Array.isArray(v)?v:[]}catch(e){return []}};
+  const dateText=value=>{const d=new Date(value);return Number.isNaN(d.getTime())?'—':d.toLocaleString('id-ID',{dateStyle:'medium',timeStyle:'short'})};
+  function renderTeacher(){
+    if($('teacher').hidden)return;
+    $('data-status').textContent=dataError||(!dataReady?'Memuat rekap dari Canva Sheet…':`${backendRecords.length} hasil pengerjaan tersedia.`);
+    $('retry-load').hidden=!dataError;
+    $('teacher-content').hidden=!dataReady;
+    if(!dataReady)return;
+    const rows=backendRecords,average=rows.length?rows.reduce((n,r)=>n+Number(r.score||0),0)/rows.length:0;
+    const passing=rows.filter(r=>Number(r.score)>=70).length;
+    const stats=[
+      ['Rata-rata kelas',average.toFixed(1)+' / 100'],
+      ['Mencapai nilai ≥70',`${passing} siswa · ${rows.length?(passing/rows.length*100).toFixed(1):'0.0'}%`],
+      ['Jumlah pengerjaan',String(rows.length)]
+    ];
+    $('stats').replaceChildren(...stats.map(([label,value])=>{
+      const div=document.createElement('div');div.className='panel p-5';
+      const a=document.createElement('p'),b=document.createElement('p');a.className='text-sm font-bold';b.className='text-2xl font-black mt-2';a.textContent=label;b.textContent=value;div.append(a,b);return div;
+    }));
+    const byQuestion=new Map();
+    rows.forEach(row=>parseList(row.answers_detail).forEach(answer=>{
+      if(!answer.id)return;
+      const entry=byQuestion.get(answer.id)||{prompt:answer.prompt||answer.id,correct:0,wrong:0};
+      entry[answer.correct?'correct':'wrong']++;byQuestion.set(answer.id,entry);
+    }));
+    const entries=[...byQuestion].map(([id,s])=>({id,...s,total:s.correct+s.wrong}));
+    const mostRight=[...entries].sort((a,b)=>b.correct-a.correct)[0];
+    const mostWrong=[...entries].sort((a,b)=>b.wrong-a.wrong)[0];
+    const summary=$('question-stats');summary.replaceChildren();
+    const overview=document.createElement('p');overview.className='mb-2 font-bold';
+    overview.textContent=entries.length?`Paling banyak benar: ${mostRight.id} (${mostRight.correct}). Paling banyak salah: ${mostWrong.id} (${mostWrong.wrong}).`:'Belum ada jawaban untuk dihitung.';
+    summary.append(overview);
+    entries.sort((a,b)=>a.id.localeCompare(b.id,'id',{numeric:true})).forEach(s=>{
+      const p=document.createElement('p');p.className='entry text-sm';
+      p.textContent=`${s.id} · ${s.prompt} — Benar: ${s.correct}/${s.total} (${(s.correct/s.total*100).toFixed(1)}%); Salah: ${s.wrong}/${s.total} (${(s.wrong/s.total*100).toFixed(1)}%).`;
+      summary.append(p);
+    });
+    const search=$('teacher-search').value.trim().toLocaleLowerCase('id');
+    let visible=rows.filter(row=>String(row.student_name||'').toLocaleLowerCase('id').includes(search));
+    const sort=$('teacher-sort').value;
+    visible=[...visible].sort((a,b)=>sort==='high'?Number(b.score)-Number(a.score):sort==='low'?Number(a.score)-Number(b.score):String(b.completed_at).localeCompare(String(a.completed_at)));
+    const body=$('teacher-rows');body.replaceChildren();
+    if(!visible.length){const tr=document.createElement('tr');const td=document.createElement('td');td.colSpan=6;td.textContent='Tidak ada hasil yang cocok.';tr.append(td);body.append(tr)}
+    visible.forEach(row=>{
+      const tr=document.createElement('tr');
+      [row.student_name||'—',dateText(row.completed_at),`${row.score ?? '—'} / 100`,row.correct_count??'—',row.wrong_count??'—'].forEach(value=>{
+        const td=document.createElement('td');td.textContent=String(value);tr.append(td);
+      });
+      const td=document.createElement('td');const details=document.createElement('details');
+      const summary=document.createElement('summary');summary.className='cursor-pointer font-bold text-[#16478a]';summary.textContent='Lihat 10 jawaban';details.append(summary);
+      parseList(row.answers_detail).forEach(a=>{
+        const item=document.createElement('div');item.className='entry mt-2 text-sm';
+        item.textContent=`No. ${a.number} · ${a.prompt}\nJawaban: ${a.selected}\nKunci: ${a.key}\n${a.correct?'BENAR':'SALAH'} · ${a.points} poin`;
+        item.style.whiteSpace='pre-line';details.append(item);
+      });
+      td.append(details);tr.append(td);body.append(tr);
+    });
+  }
+  function csvCell(value){return '"'+String(value??'').replace(/"/g,'""')+'"'}
+  function downloadCSV(){
+    if(!backendRecords.length){$('data-status').textContent='Belum ada rekap untuk diunduh.';return}
+    const header=['Nama','Waktu ISO','Nilai','Benar','Salah','Nomor','ID Soal','Pertanyaan','Jawaban Siswa','Kunci','Status','Poin'];
+    const lines=[header];
+    backendRecords.forEach(r=>parseList(r.answers_detail).forEach(a=>lines.push([
+      r.student_name,r.completed_at,r.score,r.correct_count,r.wrong_count,a.number,a.id,a.prompt,a.selected,a.key,a.correct?'BENAR':'SALAH',a.points
+    ])));
+    const csv='\uFEFF'+lines.map(line=>line.map(csvCell).join(',')).join('\r\n');
+    const url=URL.createObjectURL(new Blob([csv],{type:'text/csv;charset=utf-8'}));
+    const a=document.createElement('a');a.href=url;a.download='rekap-petualangan-pecahan.csv';document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);
+  }
+  async function deleteAll(){
+    const button=$('confirm-delete');
+    button.disabled=true;button.textContent='MENGHAPUS…';
+    let failures=0;
+    try{
+      // Each deletion is explicitly initiated by this confirmation click.
+      for(const record of [...backendRecords]){
+        try{const result=await window.dataSdk.delete(record);if(!result.isOk)failures++}
+        catch(e){failures++}
+      }
+      $('data-status').textContent=failures?`${failures} penghapusan tidak dapat dikonfirmasi. Periksa rekap sebelum mencoba lagi.`:'Penghapusan berhasil dikonfirmasi.';
+      $('delete-confirm').hidden=true;
+    }finally{button.disabled=false;button.textContent='YA, HAPUS SEMUA'}
+  }
+  document.addEventListener('DOMContentLoaded',()=>{
+    dataInitPromise=initData();
+    $('home-start').onclick=$('home-learn').onclick=()=>show(studentName?'material':'identity');
+    $('home-help').onclick=()=>show('help');
+    document.querySelectorAll('[data-go]').forEach(button=>button.onclick=()=>show(button.dataset.go));
+    $('name-form').addEventListener('submit',event=>{
+      event.preventDefault();const name=$('student-name').value.trim().replace(/\s+/g,' ');
+      $('name-error').hidden=!!name;if(!name)return;
+      studentName=name;lessonIndex=0;visited=new Set();updateMaterial();show('material');
+    });
+    $('lesson-prev').onclick=()=>{if(lessonIndex>0){lessonIndex--;updateMaterial()}};
+    $('lesson-next').onclick=()=>{if(lessonIndex<9){lessonIndex++;updateMaterial()}};
+    $('start-quiz').onclick=()=>{if(visited.size===10)beginQuiz()};
+    $('next-question').onclick=()=>{if(!locked)return;if(questionIndex===9)showResult();else{questionIndex++;renderQuestion()}};
+    $('review-material').onclick=()=>{lessonIndex=0;updateMaterial();show('material')};
+    $('finish').onclick=()=>show('home');
+    $('teacher-entry').onclick=()=>show('teacher-login');
+    $('pin-form').addEventListener('submit',event=>{
+      event.preventDefault();teacherUnlocked=$('teacher-pin').value==='2468';
+      $('pin-error').hidden=teacherUnlocked;if(teacherUnlocked){$('teacher-pin').value='';show('teacher')}
+    });
+    $('teacher-exit').onclick=()=>{teacherUnlocked=false;show('home')};
+    $('retry-load').onclick=()=>{dataInitPromise=initData();renderTeacher()};
+    $('teacher-search').addEventListener('input',renderTeacher);
+    $('teacher-sort').addEventListener('change',renderTeacher);
+    $('download-csv').onclick=downloadCSV;
+    $('delete-all').onclick=()=>{$('delete-confirm').hidden=false};
+    $('cancel-delete').onclick=()=>{$('delete-confirm').hidden=true};
+    $('confirm-delete').onclick=deleteAll;
+    // Self-check the bank's generated comparison and answer indices.
+    if(bank.length<30 || bank.some(q=>q.correct<0||q.correct>3||new Set(q.choices).size!==4)){
+      $('home-start').disabled=true;
+      $('home-learn').disabled=true;
+    }
+  });
+})();
+</script>
+ </body>
+</html>
